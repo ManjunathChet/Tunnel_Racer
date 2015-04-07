@@ -1,6 +1,7 @@
 # Tunnel_Racer
 ##Scroller video game in C implemented on an Atmega 1284 microcontroller. 
 
+https://www.youtube.com/watch?v=3bsM5Pr-qks
 
 The game allows the user to control a “racer” (green LED) who can only move left and right. He must avoid the walls (blue LEDS) of the tunnel he is travelling through. As time goes on, the walls curve more sporadically and the tunnel becomes harder to navigate. The longer the player stays alive, the more points he gets. If the racer touches a wall, the game ends and the player can restart. Anytime during the game, the player can click the reset button which will restart the game. All scores are recorded and regardless of soft-reset, the high score is always displayed
 
