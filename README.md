@@ -17,21 +17,21 @@ The game allows the user to control a “racer” (green LED) who can only move 
 
 ###Files:
 * SPEED_RACER5.0.c : Contains the majority of the source code. There are 5 concurrent state machines.
-⋅⋅* TickFct_Keypad: SM that continuously checks for Keypad input. If any of the 4 main buttons are 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* TickFct_Keypad: SM that continuously checks for Keypad input. If any of the 4 main buttons are 
 pressed, their flags are adjusted accordingly.
-⋅⋅* TickFct_Matrix: SM that continuously outputs the required values for red, green, and blue 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* TickFct_Matrix: SM that continuously outputs the required values for red, green, and blue 
 LEDS. This SM also polls for “lose” since it has the
 fastest period.
-⋅⋅* TickFct_Matrix2: SM very similar to Matrix. The key difference is that this SM takes the input 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* TickFct_Matrix2: SM very similar to Matrix. The key difference is that this SM takes the input 
 flags from all other SM’s and modifies the red, blue, and green variables. These variables are sent 
 to the first Matrix function for output.
-⋅⋅* TickFct_LCD: Sends output to the LCD Display.
-⋅⋅* TickFct_LevelGen: This function ticks every 10th of a second. It modifies the tunnel to “move” 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* TickFct_LCD: Sends output to the LCD Display.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* TickFct_LevelGen: This function ticks every 10th of a second. It modifies the tunnel to “move” 
 towards the player. It also contains a random number generator that makes the incoming parts of the 
 tunnel. As the game goes on, the tunnel moves more spontaneously and is harder to navigate.
 
 * SuperShiftFunction.c
-⋅⋅* A modified shift function that allows the user to output 2 ports to 4 shift registers instead of 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* A modified shift function that allows the user to output 2 ports to 4 shift registers instead of 
 1 to 1.
 
 ###How to Play:
@@ -43,7 +43,7 @@ movement speed.
 * Click ‘B’ once to make the mouth of the tunnel appear. This allows you to line your character 
 with the opening.
 * Click ‘B’ again to initiate travel. Use left and right to avoid the walls.
-⋅⋅* Click ‘A’ anytime in the game to reset back to the menu
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Click ‘A’ anytime in the game to reset back to the menu
 
 The LCD displays the high score in the menu. Once the game starts, a meter appears that tracks your 
 progress in the tunnel. If you hit a wall, “CRASH!” appears and your score is outputted.
